@@ -26,29 +26,27 @@ service = ChromeService('chromedriver.exe')
 driver = webdriver.Chrome(options=chrome_options)
 
 french_first_names = [
-    "Amélie", "Antoine", "Aurélie", "Benoît", "Camille", "Charles", "Chloé", "Claire", "Clément", "Dominique",
-    "Élodie", "Émilie", "Étienne", "Fabien", "François", "Gabriel", "Hélène", "Henri", "Isabelle", "Jules",
-    "Juliette", "Laurent", "Léa", "Léon", "Louise", "Lucas", "Madeleine", "Marc", "Margaux", "Marie",
-    "Mathieu", "Nathalie", "Nicolas", "Noémie", "Olivier", "Pascal", "Philippe", "Pierre", "Raphaël", "René",
-    "Sophie", "Stéphane", "Suzanne", "Théo", "Thomas", "Valentin", "Valérie", "Victor", "Vincent", "Yves",
-    "Zoé", "Adèle", "Adrien", "Alexandre", "Alice", "Alix", "Anatole", "André", "Angèle", "Anne",
-    "Baptiste", "Basile", "Bernard", "Brigitte", "Céleste", "Céline", "Christophe", "Cyril", "Denis", "Diane",
-    "Édouard", "Éléonore", "Émile", "Félix", "Florence", "Georges", "Gérard", "Guillaume", "Hugo", "Inès",
-    "Jacques", "Jean", "Jeanne", "Joséphine", "Julien", "Laure", "Lucie", "Maëlle", "Marcel", "Martine",
-    "Maxime", "Michel", "Nina", "Océane", "Paul", "Perrine", "Quentin", "Romain", "Solène", "Thérèse"
+    "Aldous", "Basilio", "Cassian", "Dacian", "Elidor", "Faelan", "Garrick", "Hadriel", "Icarus", "Jorvik",
+"Kaius", "Lorien", "Merrick", "Nestor", "Orpheus", "Peregrine", "Quillon", "Roderic", "Sylvan", "Torian",
+"Ulysses", "Vireo", "Wystan", "Xerxes", "Ywain", "Zephiran", "Alaric", "Bael", "Cyran", "Draven",
+"Evander", "Fenwick", "Gaius", "Halcyon", "Isidore", "Jovian", "Kaelith", "Lucan", "Magnus", "Nerian",
+"Octavian", "Phineas", "Quintus", "Rael", "Sirius", "Thorne", "Ulric", "Vasilis", "Wolfram", "Zorion", "Aisling", "Bellatrix", "Calista", "Damaris", "Elowen", "Fiora", "Gwyneira", "Hesper", "Isolde", "Jocasta",
+"Keturah", "Lyra", "Melisande", "Nerissa", "Ondine", "Phaedra", "Queniva", "Rhiannon", "Selene", "Tirzah",
+"Undine", "Vespera", "Wynn", "Xanthe", "Ysabeau", "Zephyrine", "Althea", "Briseis", "Cassiopeia", "Delphine",
+"Evadne", "Freesia", "Galadriel", "Helisent", "Ione", "Jessamine", "Kallista", "Lirael", "Maelis", "Nyx",
+"Opheliane", "Persephone", "Queralt", "Rosmerta", "Sybil", "Thalassa", "Urielle", "Verena", "Wrenna", "Zuleika" 
 ]
 
 french_last_names = [
-    "Leroy", "Moreau", "Bernard", "Dubois", "Durand", "Lefebvre", "Mercier", "Dupont", "Fournier", "Lambert",
-    "Fontaine", "Rousseau", "Vincent", "Muller", "Lefèvre", "Faure", "André", "Gauthier", "Garcia", "Perrin",
-    "Robin", "Clement", "Morin", "Nicolas", "Henry", "Roussel", "Mathieu", "Garnier", "Chevalier", "François",
-    "Legrand", "Gérard", "Boyer", "Gautier", "Roche", "Roy", "Noel", "Meyer", "Lucas", "Gomez",
-    "Martinez", "Caron", "Da Silva", "Lemoine", "Philippe", "Bourgeois", "Pierre", "Renard", "Girard", "Brun",
-    "Gaillard", "Barbier", "Arnaud", "Martins", "Rodriguez", "Picard", "Roger", "Schmitt", "Colin", "Vidal",
-    "Dupuis", "Pires", "Renaud", "Renault", "Klein", "Coulon", "Grondin", "Leclerc", "Pires", "Marchand",
-    "Dufour", "Blanchard", "Gillet", "Chevallier", "Fernandez", "David", "Bouquet", "Gilles", "Fischer", "Roy",
-    "Besson", "Lemoine", "Delorme", "Carpentier", "Dumas", "Marin", "Gosselin", "Mallet", "Blondel", "Adam",
-    "Durant", "Laporte", "Boutin", "Lacombe", "Navarro", "Langlois", "Deschamps", "Schneider", "Pasquier", "Renaud"
+    "Abermont", "Beaumont", "Carrington", "Davenport", "Everhart", "Falkenrath", "Godfrey", "Haverford", "Ingram", "Jourdain",
+"Kensington", "Loxley", "Montclair", "Norwood", "Ormsby", "Pembroke", "Quinlan", "Ravensdale", "Sterling", "Thornecroft",
+"Ullswater", "Valmont", "Wetherby", "Xavier", "Yorke", "Zephyrion", "Alderridge", "Blackwood", "Chamberlain", "Darnell",
+"Ellsworth", "Fitzroy", "Granville", "Holloway", "Islington", "Juliard", "Kingswell", "Lutherford", "Marchand", "Northcott",
+"Oberon", "Pendragon", "Quillbourne", "Rosendale", "Strathmore", "Tremontaine", "Vanderlyn", "Westerveld", "Yardleigh", "Zeraphine", "Astoria", "Beauchamp", "Clairmont", "Devereux", "Ellington", "Fitzalan", "Gisborne", "Hawthorne", "Iverson", "Juliette",
+"Kensington", "Lavoisier", "Montfort", "Nightingale", "Opaline", "Parlowe", "Quenelle", "Rousseau", "Sinclaire", "Trémaux",
+"Uverelle", "Valliere", "Whitmore", "Xanthippe", "Yverdon", "Zephyrine", "Aurelian", "Bellerose", "Châtelaine", "D’Orsay",
+"Esclarmonde", "Fontenelle", "Gascoyne", "Halewyn", "Isabeaux", "Jardine", "Kallistrate", "Lorentzia", "Miremont", "Nocturne",
+"Ondine", "Prévost", "Quispe", "Rosamonde", "Seraphion", "Thessaly", "Ulverston", "Viremont", "Westerdale", "Zaffre" 
 ]
 
 # Randomly select a first name and a last name
@@ -67,8 +65,8 @@ your_username = f"{your_first_name_normalized}.{your_last_name_normalized}{rando
 
 
 your_birthday = "02 3 1989" #dd m yyyy exp : 24 11 2003
-your_gender = "1" # 1:F 2:M 3:Not say 4:Custom
-your_password = "x,nscldsj123...FDKZ"
+your_gender = "3" # 1:F 2:M 3:Not say 4:Custom
+your_password = "n...16839jylwbk"
 
 def fill_form(driver):
     try:
@@ -172,10 +170,10 @@ def fill_form(driver):
         agree_button.click()
 
 
-        print(f"Your Gmail successfully created:\n{{\ngmail: {your_username}@gmail.com\npassword: {your_password}\n}}")
+        print(f"Your Gmail:\n{{\ngmail: {your_username}@gmail.com\npassword: {your_password}\n}}")
 
     except Exception as e:
-        print("Failed to create your Gmail, Sorry")
+        print("Failed, Sorry")
         print(e)
     finally:
         driver.quit()
