@@ -11,6 +11,11 @@ from selenium.webdriver.chrome.options import Options as ChromeOptions
 import random
 import time
 from unidecode import unidecode
+# My additions
+import subprocess
+import os
+import random
+import string
 
 # Chrome options
 chrome_options = ChromeOptions()
@@ -177,3 +182,17 @@ def fill_form(driver):
 
 # Execute the function to fill out the form
 fill_form(driver)
+
+# My Additions 2
+
+def random_suffix(length=5):
+    return ''.join(random.choices(string.ascii_lowercase, k=length))
+
+log_file = "accounts.txt"
+if os.path.exists(log_file):
+    log_file = f"accounts_{random_suffix()}.txt"  
+
+with open(log_file, "w") as f:  
+    process = subprocess.run(["python", "gmail_automation.py"], stdout=f, stderr=f, text=True)
+
+print(f"Output logged to: {log_file}")
